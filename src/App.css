@@ -1,38 +1,148 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.container {
+    margin: 5rem auto 0;
+    text-align: center;
+    width: 30%;
+    border: 1px solid gray;
+    padding-bottom: 10px;
+    border-radius: 3px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.title {
+    background: blue;
+    color: white;
+    height: 40px;
+    width: 95%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px auto 0;
+    border-radius: 3px;
 }
 
-.App-link {
-  color: #61dafb;
+.add-todo {
+    width: 95%;
+    height: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px auto;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.form-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.add-todo button {
+    background: blue;
+    border: none;
+    color: white;
+    height: 30px;
+    width: 80px;
+    border-radius: 3px;
+}
+
+.add-todo input {
+    width: 70%;
+    height: 30px;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid gray;
+    padding: 10px;
+}
+
+.list {
+    border: 1px solid gray;
+    border-radius: 3px;
+    height: 50px;
+    width: 95%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.lists {
+    margin-top: 7%;
+}
+
+.add-todo small {
+    margin-top: 1.4%;
+}
+
+.btns {
+    margin: 0 10px;
+    display: flex;
+    gap: 0.4rem;
+}
+
+.btns button {
+    width: 30px;
+    height: 25px;
+    border: none;
+    color: white;
+    border-radius: 3px;
+}
+
+.red-btn {
+    background: red;
+}
+
+.green-btn {
+    background: green;
+}
+
+.refresh-btn {
+    color: wheat;
+}
+
+.empty-list {
+    background: red;
+    height: 35%;
+    border-radius: 3px;
+    height: 50px;
+    width: 95%;
+    margin: 7% auto 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: white;
+}
+
+del {
+    margin: 0 10px;
+}
+
+.line-through {
+    text-decoration: line-through;
+}
+
+.bg-success {
+    background: green;
+}
+
+
+/* media queries */
+
+@media screen and (max-width: 768px) {
+    .container {
+        width: 65%;
+    }
 }
